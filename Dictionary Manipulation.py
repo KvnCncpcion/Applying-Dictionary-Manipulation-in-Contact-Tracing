@@ -45,14 +45,22 @@ while True:
 
 # Adding of Option 2
     elif user_input == 2:
-        user_search = str(input("Please Enter the Full Name of whom you seek: "))
-        if user_search in contact_info:
-            for key, value in contact_info[user_search].items():
-                print(key, value)
+        try:
+            user_search = str(input("Please Enter the Full Name of whom you seek: "))
+
+        except ValueError:
+            print("")
+            print("No, No, No, No. Invalid Input User.")
+            break
 
         else:
-            print("That person doesn't exist in my database.")
-            break
+            if user_search in contact_info:
+                for key, value in contact_info[user_search].items():
+                    print(key, value)
+
+            else:
+                print("That person doesn't exist in my database.")
+                break
 
 # Adding of Option 3
     elif user_input == 3:
