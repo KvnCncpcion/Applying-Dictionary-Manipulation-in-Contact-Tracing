@@ -15,3 +15,12 @@ print("")
 
 # Adding of Question for User Input
 user_input = int(input("What do you want to do? "))
+
+# Adding Option 1
+if user_input == 1:
+    print("")
+    user_name = input("Please Enter your Full Name: ")
+    user_age = input("Please Enter your Age: ")
+    user_address = input("Please Enter your Address: ")
+    user_pernum = input("Please Enter your Contact Number: ")
+    print("Saved")
