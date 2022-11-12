@@ -69,3 +69,13 @@ while True:
     else:
         print("I am sorry, your input command is invalid.")
         break
+
+# Adding of Additional Question
+    print("")
+    add_question = str(input("Would you like to continue? (y/n) "))
+    if add_question == "y":
+        continue
+    else:
+        print("")
+        print("Thank you for using the program!!!")
+        break
