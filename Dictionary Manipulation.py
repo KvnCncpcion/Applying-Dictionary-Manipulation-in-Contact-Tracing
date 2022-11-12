@@ -31,6 +31,7 @@ while True:
         except ValueError:
             print("")
             print("No, No, No, No. Invalid Input User.")
+            break
 
         else:
             # Adding of inputted data to dictionary
@@ -39,6 +40,7 @@ while True:
                 "Address: ": user_address,
                 "Number: ": user_pernum
             }
+            print("")
             print("All of the information that you have entered is saved.")
 
 # Adding of Option 2
