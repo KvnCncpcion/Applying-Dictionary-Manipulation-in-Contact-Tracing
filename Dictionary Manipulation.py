@@ -41,3 +41,9 @@ if user_input == 2:
     else:
         print("That person doesn't exist in my database.")
 
+# Adding of Option 3
+if user_input == 3:
+    print("")
+    print("Thank you for using the program!!!")
+    break
+
