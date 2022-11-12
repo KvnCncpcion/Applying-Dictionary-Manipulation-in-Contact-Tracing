@@ -48,8 +48,12 @@ while True:
 # Adding of Option 3
     elif user_input == 3:
         print("")
-        print("Thank you for using the program!!!")
-        break
+        confirmation = str(input("Do you wish to exit? (y/n): "))
+        if confirmation == "y":
+            print("Thank you for using the program!!!")
+            break
+        else:
+            continue
 
 # Adding of Else Statement
     else:
