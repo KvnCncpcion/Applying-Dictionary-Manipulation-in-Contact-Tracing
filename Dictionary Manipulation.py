@@ -46,7 +46,7 @@ while True:
 # Adding of Option 2
     elif user_input == 2:
         try:
-            user_search = str(input("Please Enter the Full Name of whom you seek: "))
+            user_search = input("Please Enter the Full Name of whom you seek: ")
 
         except ValueError:
             print("")
