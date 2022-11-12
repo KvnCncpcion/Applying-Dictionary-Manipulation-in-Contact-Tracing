@@ -19,8 +19,17 @@ user_input = int(input("What do you want to do? "))
 # Adding Option 1
 if user_input == 1:
     print("")
-    user_name = input("Please Enter your Full Name: ")
-    user_age = input("Please Enter your Age: ")
-    user_address = input("Please Enter your Address: ")
-    user_pernum = input("Please Enter your Contact Number: ")
-    print("Saved")
+    user_name = str(input("Please Enter your Full Name: "))
+    user_age = int(input("Please Enter your Age: "))
+    user_address = str(input("Please Enter your Address: "))
+    user_pernum = int(input("Please Enter your Contact Number: "))
+    # Adding of data to dictionary
+    contact_info[user_name] = {
+        "Age: ": user_age,
+        "Address: ": user_address,
+        "Number: ": user_pernum
+    }
+    print("All of the information that you have entered is saved.")
+
+
+
