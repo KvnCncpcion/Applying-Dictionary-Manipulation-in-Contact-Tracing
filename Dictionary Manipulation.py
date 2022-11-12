@@ -24,7 +24,7 @@ while True:
         print("")
         user_name = str(input("Please Enter your Full Name: "))
         user_age = int(input("Please Enter your Age: "))
-        user_address = str(input("Please Enter your Address: "))
+        user_address = input("Please Enter your Address: ")
         user_pernum = int(input("Please Enter your Contact Number: "))
         # Adding of inputted data to dictionary
         contact_info[user_name] = {
@@ -50,6 +50,7 @@ while True:
         print("")
         confirmation = str(input("Do you wish to exit? (y/n): "))
         if confirmation == "y":
+            print("")
             print("Thank you for using the program!!!")
             break
         else:
