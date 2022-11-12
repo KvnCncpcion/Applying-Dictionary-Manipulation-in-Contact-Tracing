@@ -43,6 +43,7 @@ while True:
 
         else:
             print("That person doesn't exist in my database.")
+            break
 
 # Adding of Option 3
     if user_input == 3:
