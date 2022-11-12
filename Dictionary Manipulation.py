@@ -22,17 +22,24 @@ while True:
 # Adding Option 1
     if user_input == 1:
         print("")
-        user_name = str(input("Please Enter your Full Name: "))
-        user_age = int(input("Please Enter your Age: "))
-        user_address = input("Please Enter your Address: ")
-        user_pernum = int(input("Please Enter your Contact Number: "))
-        # Adding of inputted data to dictionary
-        contact_info[user_name] = {
-            "Age: ": user_age,
-            "Address: ": user_address,
-            "Number: ": user_pernum
-        }
-        print("All of the information that you have entered is saved.")
+        try:
+            user_name = str(input("Please Enter your Full Name: "))
+            user_age = int(input("Please Enter your Age: "))
+            user_address = input("Please Enter your Address: ")
+            user_pernum = int(input("Please Enter your Contact Number: "))
+
+        except ValueError:
+            print("")
+            print("No, No, No, No. Invalid Input User.")
+
+        else:
+            # Adding of inputted data to dictionary
+            contact_info[user_name] = {
+                "Age: ": user_age,
+                "Address: ": user_address,
+                "Number: ": user_pernum
+            }
+            print("All of the information that you have entered is saved.")
 
 # Adding of Option 2
     elif user_input == 2:
