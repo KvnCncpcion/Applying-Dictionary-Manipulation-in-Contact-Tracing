@@ -23,7 +23,7 @@ if user_input == 1:
     user_age = int(input("Please Enter your Age: "))
     user_address = str(input("Please Enter your Address: "))
     user_pernum = int(input("Please Enter your Contact Number: "))
-    # Adding of data to dictionary
+    # Adding of inputted data to dictionary
     contact_info[user_name] = {
         "Age: ": user_age,
         "Address: ": user_address,
@@ -31,5 +31,13 @@ if user_input == 1:
     }
     print("All of the information that you have entered is saved.")
 
+# Adding of Option 2
+if user_input == 2:
+    user_search = str(input("Please Enter the Full Name of whom you seek: "))
+    if user_search in contact_info:
+        for key, value in contact_info[user_search].items():
+            print(key, value)
 
+    else:
+        print("That person doesn't exist in my database.")
 
