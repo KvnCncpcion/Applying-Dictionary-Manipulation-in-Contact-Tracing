@@ -22,10 +22,10 @@ while True:
 # Adding Option 1
     if user_input == 1:
         print("")
+        user_name = str(input("Please Enter your Full Name: "))
+        user_address = input("Please Enter your Address: ")
         try:
-            user_name = str(input("Please Enter your Full Name: "))
             user_age = int(input("Please Enter your Age: "))
-            user_address = input("Please Enter your Address: ")
             user_pernum = int(input("Please Enter your Contact Number: "))
 
         except ValueError:
