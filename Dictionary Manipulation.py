@@ -35,7 +35,7 @@ while True:
         print("All of the information that you have entered is saved.")
 
 # Adding of Option 2
-    if user_input == 2:
+    elif user_input == 2:
         user_search = str(input("Please Enter the Full Name of whom you seek: "))
         if user_search in contact_info:
             for key, value in contact_info[user_search].items():
@@ -46,8 +46,12 @@ while True:
             break
 
 # Adding of Option 3
-    if user_input == 3:
+    elif user_input == 3:
         print("")
         print("Thank you for using the program!!!")
         break
 
+# Adding of Else Statement
+    else:
+        print("I am sorry, your input command is invalid.")
+        break
